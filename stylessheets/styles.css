@@ -3,10 +3,32 @@
 }
 
 .picture-frame {
-    height: 750px;
-    width: 750px;
+    /*height: 750px;
+    width: 750px; */
+
 }
 
 .picture-frame > img {
     width: 100%
+}
+
+.poster {
+    /* any descendants with position: absolute will be in relation to .poster */
+    position: relative;
+    height: 500px;
+}
+
+.part1, .part2 {
+    position: absolute;
+    color: rgb(10, 10, 10);
+}
+
+.part1 {
+    left: 12px;
+    top: 250px;
+}
+
+.part2 {
+    bottom: 5px;
+    right: 2px;
 }
